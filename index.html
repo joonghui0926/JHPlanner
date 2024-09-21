@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Planner</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Schedule Planner</h1>
+        
+        <div class="date-navigation">
+            <button id="prev-day-btn">Previous Day</button>
+            <span id="current-date"></span>
+            <button id="next-day-btn">Next Day</button>
+        </div>
+        
+        <div class="schedule-container">
+            <h2>Schedule for <span id="date-display"></span></h2>
+            <ul id="schedule-list">
+                <!-- Daily schedule items will be listed here -->
+            </ul>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <button id="show-summary-btn">Show Today's Time Summary</button>
+    </div>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Task</h2>
+            <label for="task-start-time">Start Time:</label>
+            <input type="time" id="task-start-time" required>
+            <label for="task-end-time">End Time:</label>
+            <input type="time" id="task-end-time" required>
+            <label for="task-desc">Description:</label>
+            <input type="text" id="task-desc" required>
+            <button id="save-task-btn">Save Task</button>
+        </div>
+    </div>
+
+    <!-- Summary Modal -->
+    <div id="summary-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-summary">&times;</span>
+            <h2>Today's Stopwatch Time</h2>
+            <ul id="summary-list">
+                <!-- Task summaries will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
